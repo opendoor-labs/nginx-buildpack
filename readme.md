@@ -1,6 +1,11 @@
 # Heroku Buildpack: NGINX
 
-This is Belly's fork of  [ryandotsmith/nginx-buildpack](https://github.com/ryandotsmith/nginx-buildpack). Here's what is different:
+This is Opendoor's fork of Belly's fork of  [ryandotsmith/nginx-buildpack](https://github.com/ryandotsmith/nginx-buildpack). 
+
+Here's what is different (for Opendoor): 
+- updated nginx version to 1.12.3
+
+Here's what is different (for Belly):
 
 * Moved the port variable configuration to a file that can be included in any nginx config file. This is helpful for breaking a large config file into multiple files and still being able to achieve a variable port number (necessary for Heroku). [9c1528a](https://github.com/bellycard/nginx-buildpack/commit/9c1528ae218b57fe40724ca87a61eb08e4046504)
 * Upgraded nginx to version 1.9.4 & added openssl support. Belly's requirements dictate that our proxy support SSL, so we added it, also upgraded to the latest nginx, since we were recompiling it anyway. [8233318](https://github.com/bellycard/nginx-buildpack/commit/82333189afdf0bffd9fc8f6d5885f363968e6059), [0176e38](https://github.com/bellycard/nginx-buildpack/commit/0176e389cc97f4059d68102b6eb9c5bc0755953f), [bfacddd](https://github.com/bellycard/nginx-buildpack/commit/bfacddd641e5f77c7eb005be4a030dbe0c310911)
