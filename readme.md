@@ -3,7 +3,7 @@
 This is Opendoor's fork of Belly's fork of  [ryandotsmith/nginx-buildpack](https://github.com/ryandotsmith/nginx-buildpack). 
 
 Here's what is different (for Opendoor): 
-- updated nginx version to 1.12.3
+- updated nginx version to 1.12.0
 
 Here's what is different (for Belly):
 
